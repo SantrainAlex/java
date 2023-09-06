@@ -1,5 +1,7 @@
 package org.example.exo4;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Exo4 {
@@ -50,6 +52,19 @@ public class Exo4 {
             System.out.println("Les mot son Palindrome");
         }else {
             System.out.println("Les mot ne sont pas Palindrome");
+        }
+    }
+
+    public static void exo5() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Donne moi un numéro : ");
+        int num = scanner.nextInt();
+        for (int i = 1; i < num; i++) {
+            System.out.println(String.join("", Collections.nCopies(2 * i -1, "*")));
+        }
+        for (int i = num; i > 0; i--) {
+            System.out.println(String.join("", Collections.nCopies(2 * i -1, "*")));
+
         }
     }
 
