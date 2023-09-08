@@ -8,7 +8,8 @@ public class Epargne extends Simple{
     }
 
     public void calculInterer(int nbrRetrait) {
-        setSolde(tauxInteret);
+
+        setSolde(((1 + (tauxInteret/100) * nbrRetrait)));
     }
 
 
