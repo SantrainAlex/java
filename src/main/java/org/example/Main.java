@@ -12,6 +12,7 @@ public class Main {
         Chaise chaise1 = new Chaise(4, "Bleu", "Bois");
         Chaise chaise2 = new Chaise(4, "Blanche", "Métal");
         Chaise chaise3 = new Chaise(1, "Transparente", "Pléxiglass");
+
         System.out.println(chaise1.toString());
         System.out.println(chaise2.toString());
         System.out.println(chaise3.toString());
